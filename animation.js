@@ -1,7 +1,7 @@
 // ====================================================
 // DESIGN DECISION: Single Product "Object Worship"
 // ====================================================
-const PRODUCTS_PER_CYCLE = 1;
+const PRODUCTS_PER_CYCLE = 2;
 
 let PRODUCTS = [];
 let currentBatch = 0;
