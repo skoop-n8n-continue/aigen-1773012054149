@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+#scene {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background-color: #030303;
+}
+
+#background {
+  position: absolute;
+  inset: -100px; /* Bleed for scaling */
+  background-image: url('https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1773012054149%2Fassets%2Fmpx_dark_gold_bg-1773012106524.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+#background-effects {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#the-x {
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+}
+
+.line-1 {
+  width: 100%;
+  height: 4px;
+  transform: rotate(45deg);
+}
+
+.line-2 {
+  width: 100%;
+  height: 4px;
+  transform: rotate(-45deg);
+}
+
+#glow-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+#products-container {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 100px 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+
+.product-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #D4AF37; /* MPX Gold */
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.product-name {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.strain-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  color: #D4AF37;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  width: fit-content;
+}
+
+.pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.original-price {
+  font-size: 48px;
+  color: #666;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.discount-price {
+  font-size: 96px;
+  color: #D4AF37;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.discount-label {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+#foreground-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+  box-shadow: inset 0 0 200px rgba(0,0,0,0.9);
+}

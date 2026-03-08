@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPX NJ - Object Worship</title>
+
+  <!-- Cache Control -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- GSAP Core + Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=mpx01">
+</head>
+<body>
+  <div id="scene">
+    <!-- Layer 1: Background -->
+    <div id="background"></div>
+
+    <!-- Layer 2: Background Effects (The Sweeping X) -->
+    <div id="background-effects">
+      <div id="the-x">
+        <div class="x-line line-1"></div>
+        <div class="x-line line-2"></div>
+      </div>
+      <div id="glow-overlay"></div>
+    </div>
+
+    <!-- Layer 3: Products Container -->
+    <div id="products-container"></div>
+    
+    <!-- Layer 4: Foreground (Vignette) -->
+    <div id="foreground-layer"></div>
+  </div>
+
+  <script src="animation.js?v=mpx01"></script>
+</body>
+</html>

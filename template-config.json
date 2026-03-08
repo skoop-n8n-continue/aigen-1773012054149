@@ -1,0 +1,36 @@
+{
+  "template_id": "mpx_object_worship_001",
+  "name": "MPX NJ Object Worship Promo",
+  "created_at": "2026-03-08T00:00:00Z",
+  "version": "1.0.0",
+  "theme": {
+    "style": "dark luxury",
+    "description": "Premium, dark, cinematic presentation highlighting product discounts with gold accents",
+    "colors": ["#000000", "#D4AF37", "#FFFFFF"],
+    "mood": "moody, cinematic, premium, serious",
+    "tags": ["atlantic city", "promo", "single product", "gold"]
+  },
+  "capabilities": {
+    "products_per_cycle": 1,
+    "cycles_through_all_products": true
+  },
+  "animation": {
+    "duration": 9,
+    "fps": 30,
+    "entrance_duration": 3,
+    "idle_duration": 4,
+    "exit_duration": 2,
+    "uses_plugins": ["SplitText"]
+  },
+  "assets": {
+    "background": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1773012054149%2Fassets%2Fmpx_dark_gold_bg-1773012106524.png",
+    "overlays": [],
+    "icons": [],
+    "fonts": ["Montserrat"]
+  },
+  "technical": {
+    "resolution": "1920x1080",
+    "performance": "optimized",
+    "browser_compatibility": "chrome_latest"
+  }
+}
