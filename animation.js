@@ -216,4 +216,8 @@ function animateCycle(batchIndex) {
   // Total duration roughly 9 seconds per cycle
 }
 
+function startCycle() {
+  animateCycle(0);
+}
+
 window.addEventListener('DOMContentLoaded', loadProducts);
